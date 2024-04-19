@@ -1,0 +1,22 @@
+<nav class="text-white bg-[#00000090] flex items-center justify-between px-10 h-16 lg:gap-8">
+    <!-- [#FFFFFF90] here white with opacity 90 -->
+    <a href="" class="text-2xl font-bold border-2 px-2 py-1 rounded whitespace-nowrap">Tailwind CSS</a>
+
+    <div #dropdown_menu class="absolute -top-full left-0 max-lg:bg-[#00000090] w-full flex flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex-row lg:justify-between">
+        <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+            <li class="hover:text-purple-400 cursor-pointer">Home</li>
+            <li class="hover:text-purple-400 cursor-pointer">Tips</li>
+            <li class="hover:text-purple-400 cursor-pointer">Videos</li>
+            <li class="hover:text-purple-400 cursor-pointer">Blog</li>
+            <li class="hover:text-purple-400 cursor-pointer">Courses</li>
+        </ul>
+        <div class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+            <button class="hover:text-purple-400 cursor-pointer">Login</button>
+            <button class="bg-purple-400 rounded-lg px-2 py-1 cursor-pointer">Sign Up</button>
+        </div>        
+    </div>
+    
+    <div #toggle_button class="lg:hidden" (click)="toggleDropdown()" >
+        <i class="fa-solid fa-bars fa-lg"></i>
+    </div>
+</nav>
